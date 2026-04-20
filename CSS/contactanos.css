@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/*ESTO SERIA EL TOP*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: burlywood;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: green;
+    padding: 15px;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: whitesmoke;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.logo img {
+    height: 60px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.2);
+}
+
+/*historia*/
+#conocenos h2 {
+    color: #2e8b57;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#conocenos p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#conocenos img {
+    transition: transform 0.3s ease;
+}
+
+#conocenos img:hover {
+    transform: scale(1.5);
+}
+
+
+/*lINEA DE TIEMPO - PRUEBA*/
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #2e8b57;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+    color: #2e8b57;
+    font-weight: bold;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #2e8b57;
+    border: 3px solid #fff;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.right::before {
+    left: -10px;
+}
+/*BENEFICIOS DE CONSUMIR ORGANICOS*/
+.beneficios {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: whitesmoke;
+}
+
+.beneficios h2 {
+    color: #2e8b57;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+
+.contenedor-beneficios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.beneficio {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.beneficio:hover {
+    transform: translateY(-10px);
+}
+
+.beneficio img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.beneficio h4 {
+    color: #2e8b57;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.beneficio p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+
+
+/*ESTO SERIA DEL FURMULARIO*/
+#informacion {
+    background-color: #f9f9f9;
+    /* Fondo claro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+#informacion h2 {
+    color: #2e8b57;
+    /* Verde ecológico */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#informacion .form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+#informacion .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#informacion .btn-warning {
+    display: block;
+    margin: 20px auto 0 auto;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#informacion .btn-warning:hover {
+    background-color: #ff9800;
+}
+
+/*ESTO SERIA EL footer*/
+footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/*ESTO SERIA EL TOP*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: burlywood;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: green;
+    padding: 15px;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: whitesmoke;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.logo img {
+    height: 60px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.2);
+}
+
+/*ESTO SERIA EL CARRUSEL DE BANERS*/
+#banners {
+    max-width: 2000px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#banners .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*seccion de descuentos con cards*/
+.main-contenido {
+    margin: 30px;
+    text-align: center;
+    background-color: bisque;
+    padding: 20px
+}
+
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* permitir que los elementos bajen a otra fila*/
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/*BENEFICIOS DEL INDEX*/
+.beneficios {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: whitesmoke;
+}
+
+.beneficios h2 {
+    color: #2e8b57;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+
+.contenedor-beneficios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.beneficio {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.beneficio:hover {
+    transform: translateY(-10px);
+}
+
+.beneficio img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.beneficio h4 {
+    color: #2e8b57;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.beneficio p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/*Boton "SOBRE NOSTROS"*/
+.tex-intro {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/*presentación*/
+.texto-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Seccion exclusiva - prueba*/
+#bienvenida h2 {
+    color: #2e8b57;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#bienvenida p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#bienvenida img {
+    transition: transform 0.3s ease;
+}
+
+#bienvenida img:hover {
+    transform: scale(1.5);
+}
+
+
+/*ESTO SERIA EL footer*/
+footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
