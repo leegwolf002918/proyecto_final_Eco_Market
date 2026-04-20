@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pagos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>PAGA AHORA</title>
+    <script type="text/javascript"
+        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=WYKqIi18WoTL96CUDAa88OSldtTNlxXVrGCt7ntQ3Sc47TL8FQKuOuQMUibMzE8Chiq9v2LvvC5QyLK10JR7cqZmzb22Ta-So5cRxzCVxXI"
+        charset="UTF-8"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <!--Este seria el logo-->
+            <div class="logo"><img src="../IMG/logo.png" alt="logo"></div>
+            <!--Este seria el menu-->
+            <div class="menu">
+                <a href="../INDEX.HTML">Inicio</a>
+                <a href="../PAGES/frutas_y_verduras.html">Frutas y verduras</a>
+                <a href="../PAGES/granos_y_legumbres.html">Granos y legumbres</a>
+                <a href="../PAGES/contactanos.html">Contactanos</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <h2 class="mb-4">Finaliza tu compra</h2>
+
+        <!-- Resumen del pedido -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <strong>Resumen del pedido</strong>
+            </div>
+            <div class="card-body">
+                <p>Producto: LO SELECCIONADO</p>
+                <p>Cantidad: 1</p>
+                <p>Total: S/ ***.**</p>
+            </div>
+        </div>
+
+        <!-- Formulario de pago -->
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="direccion" class="form-label">Dirección para el envío</label>
+                <input type="text" class="form-control" id="direccion" required>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Pagar ahora</button>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2026 Eco Market</p>
+        <p>Contáctame: ecomarket@proyectofinal.com</p>
+    </footer>
+</body>
+
+</html>
